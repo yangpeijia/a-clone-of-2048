@@ -15,7 +15,7 @@
 ![游戏架构](https://github.com/yangpeijia/clone-2048/blob/master/%E6%B8%B8%E6%88%8F%E6%9E%B6%E6%9E%84.jpg)
 
 ## 初始化界面
-![初始化]()
+![初始化](https://github.com/yangpeijia/clone-2048/blob/master/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%95%8C%E9%9D%A2.png)
 
 ## gameover界面
-![GameOver]()
+![GameOver](https://github.com/yangpeijia/clone-2048/blob/master/GameOver.png)
