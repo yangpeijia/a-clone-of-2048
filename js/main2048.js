@@ -69,8 +69,7 @@ function init(){
     //有操作，更新界面
     updateBoardView();
     $("#score").text(score);
-    $("#mask").hide();
-    $("#game-over").hide();
+    
     
 }
 
@@ -104,6 +103,7 @@ function updateBoardView(){
      }
      $(".number-cell").css("line-height",cell_side_length+"px");
      $(".number-cell").css("font-size",0.5*cell_side_length+"px");
+     
 }
 
 function generateOneNumber(){
@@ -112,30 +112,44 @@ function generateOneNumber(){
         return false;
     };
    
-    //随机生成两个坐标
-    var randX=Math.floor(Math.random()*4);
-    var randY=Math.floor(Math.random()*4);
-    var times=0;
-    //判断坐标所在格子是否为空
-    while(times<50){
-        if(board[randX][randY]==0){
-            break;
-        }
-        randX=Math.floor(Math.random()*4);
-        randY=Math.floor(Math.random()*4);
-        times++;
-    }
-    if(times==50){
-        for(var i=0;i<4;i++){
-            for(var j=0;j<4;j++){
-                if(board[i][j]==0){
-                    randX=i;
-                    randY=j;
-                    break;
-                }
+    // 获取所有空格子
+    var space_grid=new Array();
+    for(var i=0;i<4;i++){
+        for(var j=0;j<4;j++){
+            if(board[i][j]==0){;
+                var value=i*4+j;//储存i,j数据
+                space_grid.push(value);
             }
         }
     }
+    var len=space_grid.length;
+    //随机获取一个空格子
+    var count=space_grid[Math.floor(Math.random()*len)];
+
+    //在空格子里随机生成两个坐标
+    var randX=Math.floor(count/4);
+    var randY=Math.floor(count%4);
+    // var times=0;
+    // //判断坐标所在格子是否为空
+    // while(times<50){
+    //     if(board[randX][randY]==0){
+    //         break;
+    //     }
+    //     randX=Math.floor(Math.random()*4);
+    //     randY=Math.floor(Math.random()*4);
+    //     times++;
+    // }
+    // if(times==50){
+    //     for(var i=0;i<4;i++){
+    //         for(var j=0;j<4;j++){
+    //             if(board[i][j]==0){
+    //                 randX=i;
+    //                 randY=j;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
     
     
     var rand_number=Math.random()<0.5?2:4;
@@ -153,28 +167,28 @@ $(document).keydown(function(e){
             if(moveLeft()){
                 e.preventDefault();
                 setTimeout("generateOneNumber()",210);
-                setTimeout("isGameOver()",300);
+                setTimeout("isGameOver()",400);
             }
             break;
         case 38://up
             if(moveUp()){
                 e.preventDefault();
                 setTimeout("generateOneNumber()",210);
-                setTimeout("isGameOver()",300);
+                setTimeout("isGameOver()",400);
             }
             break;
         case 39://right
             if(moveRight()){
                 e.preventDefault();
                 setTimeout("generateOneNumber()",210);
-                setTimeout("isGameOver()",300);
+                setTimeout("isGameOver()",400);
             }
             break;
         case 40://down
             if(moveDown()){
                 e.preventDefault();
                 setTimeout("generateOneNumber()",210);
-                setTimeout("isGameOver()",300);
+                setTimeout("isGameOver()",400);
             }
         default://default
             break;
