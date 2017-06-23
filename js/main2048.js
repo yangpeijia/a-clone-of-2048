@@ -220,14 +220,14 @@ document.addEventListener("touchend",function(e){
         if(delta_x>0){
             //move right
             if(moveRight()){
-                setTimeout("generateOneNumber()",210);
+                setTimeout("generateOneNumber()",110);
                 setTimeout("isGameOver()",300);
             }
             
         }else{
             //move left
             if(moveLeft()){
-                setTimeout("generateOneNumber()",210);
+                setTimeout("generateOneNumber()",110);
                 setTimeout("isGameOver()",300);
             }
         }
@@ -235,13 +235,13 @@ document.addEventListener("touchend",function(e){
         if(delta_y>0){
             //move down
              if(moveDown()){
-                setTimeout("generateOneNumber()",210);
+                setTimeout("generateOneNumber()",110);
                 setTimeout("isGameOver()",300);
             }
         }else{
             //move up
             if(moveUp()){
-                setTimeout("generateOneNumber()",210);
+                setTimeout("generateOneNumber()",110);
                 setTimeout("isGameOver()",300);
             }
         }
@@ -293,7 +293,7 @@ function moveLeft(){
             }
         } 
     }
-    setTimeout("updateBoardView()",200);
+    setTimeout("updateBoardView()",100);
     return true;
 }
 
@@ -327,7 +327,7 @@ function moveRight(){
             }
         } 
     }
-    setTimeout("updateBoardView()",200);
+    setTimeout("updateBoardView()",100);
     return true;
 }
 
@@ -362,7 +362,7 @@ function moveUp(){
             }
         } 
     }
-    setTimeout("updateBoardView()",200);
+    setTimeout("updateBoardView()",100);
     return true;
 }
 
@@ -396,7 +396,7 @@ function moveDown(){
             }
         } 
     }
-    setTimeout("updateBoardView()",200);
+    setTimeout("updateBoardView()",100);
     return true;
 }
 
