@@ -212,7 +212,7 @@ document.addEventListener("touchend",function(e){
     var delta_y=end_y-start_y;
 
     // 判断是否是滑动意图
-    if(Math.abs(delta_x)<0.2*document_width&&Math.abs(delta_y)<0.2*document_width){
+    if(Math.abs(delta_x)<0.1*document_width&&Math.abs(delta_y)<0.1*document_width){
         return;
     }
     
