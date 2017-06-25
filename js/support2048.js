@@ -164,7 +164,7 @@ function updateBestScore(score){
 
 
 function closeWindow(){
-    window.close();  
+    self.close();  
 }
 
 function again(){
