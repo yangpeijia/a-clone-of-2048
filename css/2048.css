@@ -156,6 +156,7 @@ header p{
 
 .try-again{
     margin-right:40px;
+	width:50px;
 	border:1px solid #ffaa22;
 	background:-moz-linear-gradient( center top, #ffec64 8%, #ffab23 97% );
 	background:-ms-linear-gradient( top, #ffec64 8%, #ffab23 97% );
@@ -169,7 +170,8 @@ header p{
  	-moz-box-shadow:inset 0px 0px 0px -50px #fff6af;
  	box-shadow:inset 0px 0px 0px -50px #fff6af;
 }
-.try-again:hover {
+.try-again:hover,
+.try-again:active{
 	background:-moz-linear-gradient( center top, #ffab23 8%, #ffec64 97% );
 	background:-ms-linear-gradient( top, #ffab23 8%, #ffec64 97% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
@@ -179,6 +181,7 @@ header p{
 
 .exit{
    margin-left:40px;
+	width:50px;
 	border:1px solid #469df5;
 	background:-moz-linear-gradient( center top, #79bbff 8%, #4197ee 97% );
 	background:-ms-linear-gradient( top, #79bbff 8%, #4197ee 97% );
@@ -193,7 +196,8 @@ header p{
  	box-shadow:inset 0px 0px 0px -50px #cae3fc;
 }
 
-.exit:hover {
+.exit:hover,
+.exit:active{
 	background:-moz-linear-gradient( center top, #4197ee 8%, #79bbff 97% );
 	background:-ms-linear-gradient( top, #4197ee 8%, #79bbff 97% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
