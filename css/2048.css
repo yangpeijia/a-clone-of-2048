@@ -156,7 +156,7 @@ header p{
 
 .try-again{
     margin-right:40px;
-	width:50px;
+	height:18px;
 	border:1px solid #ffaa22;
 	background:-moz-linear-gradient( center top, #ffec64 8%, #ffab23 97% );
 	background:-ms-linear-gradient( top, #ffec64 8%, #ffab23 97% );
@@ -181,7 +181,7 @@ header p{
 
 .exit{
    margin-left:40px;
-	width:50px;
+	height:18px;
 	border:1px solid #469df5;
 	background:-moz-linear-gradient( center top, #79bbff 8%, #4197ee 97% );
 	background:-ms-linear-gradient( top, #79bbff 8%, #4197ee 97% );
