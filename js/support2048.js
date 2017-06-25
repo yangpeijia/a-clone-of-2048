@@ -164,7 +164,8 @@ function updateBestScore(score){
 
 
 function closeWindow(){
-    self.close();  
+    $("#mask").hide();
+    $("#game-over").hide();
 }
 
 function again(){
